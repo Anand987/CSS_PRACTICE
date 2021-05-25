@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS ANIMATION EFFECT</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="scene">
+      <div class="sun"></div>
+      <div class="bg">
+        <img src="./assets/police_car.gif" class="car1" alt="car1" />
+        <img src="./assets/police_car.gif" class="car2" alt="car1" />
+      </div>
+    </section>
+    <script>
+      const body = document.querySelector("body");
+      const sun = document.querySelector(".sun");
+
+      sun.addEventListener("click", function () {
+        body.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
